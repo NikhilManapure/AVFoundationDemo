@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AVFoundation_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OL6-DM-XIc">
+                                <rect key="frame" x="0.0" y="20" width="375" height="375"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="OL6-DM-XIc" secondAttribute="height" multiplier="1:1" id="QLV-U7-5Oz"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap Here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O1S-zN-Cve">
+                                <rect key="frame" x="93" y="178.5" width="188" height="58"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Q4e-Wc-0je">
+                                <rect key="frame" x="83.5" y="427" width="208" height="208"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Q4e-Wc-0je" secondAttribute="height" multiplier="1:1" id="CDV-vz-axd"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="OL6-DM-XIc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Iqv-7J-sXt"/>
+                            <constraint firstItem="Q4e-Wc-0je" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LTh-Bt-hXa"/>
+                            <constraint firstItem="O1S-zN-Cve" firstAttribute="centerX" secondItem="OL6-DM-XIc" secondAttribute="centerX" id="OKG-0c-wWv"/>
+                            <constraint firstItem="O1S-zN-Cve" firstAttribute="centerY" secondItem="OL6-DM-XIc" secondAttribute="centerY" id="RYz-d0-g8h"/>
+                            <constraint firstItem="Q4e-Wc-0je" firstAttribute="top" secondItem="OL6-DM-XIc" secondAttribute="bottom" constant="32" id="Rj6-5k-CCt"/>
+                            <constraint firstItem="OL6-DM-XIc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Rzc-cF-G8q"/>
+                            <constraint firstAttribute="trailing" secondItem="OL6-DM-XIc" secondAttribute="trailing" id="aN9-4v-EUo"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Q4e-Wc-0je" secondAttribute="bottom" constant="32" id="heT-d8-1Md"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cameraPreview" destination="OL6-DM-XIc" id="Dfg-n8-sib"/>
+                        <outlet property="imageView" destination="Q4e-Wc-0je" id="fzZ-ON-xGs"/>
+                        <outlet property="tapHereLabel" destination="O1S-zN-Cve" id="0Ya-zq-yk7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>
